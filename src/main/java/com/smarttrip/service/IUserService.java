@@ -25,4 +25,9 @@ public interface IUserService {
     int updateByPrimaryKey(User record);
     
     List<User> selectByPage(RowBounds rb);
+    
+    User selectByMobile(String mobile);
+    
+    boolean checkPwd(User user,String pwd);
+    
 }
