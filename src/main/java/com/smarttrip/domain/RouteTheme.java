@@ -1,6 +1,6 @@
 package com.smarttrip.domain;
 
-public class Routetheme {
+public class RouteTheme {
     private String id;
 
     private String routeId;
