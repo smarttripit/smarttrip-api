@@ -1,7 +1,6 @@
 package com.smarttrip.service;
 
 import com.smarttrip.domain.RouteTheme;
-import com.smarttrip.domain.Schedule;
 
 /**
  * @author gaoweibupt@gmail.com
@@ -12,9 +11,9 @@ public interface IRouteThemeService {
 
 	int insert(RouteTheme record);
 	
-	int deleteByPrimaryKey(String Id);
+	int deleteByPrimaryKey(String id);
 	
 	int updateByPrimaryKey(RouteTheme record);
 	
-	Schedule selectByPrimaryKey(String Id);
+	RouteTheme selectByPrimaryKey(String id);
 }
