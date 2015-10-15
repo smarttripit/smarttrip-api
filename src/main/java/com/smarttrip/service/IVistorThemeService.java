@@ -5,10 +5,6 @@
 package com.smarttrip.service;
 
 import java.util.List;
-
-import org.apache.ibatis.session.RowBounds;
-
-import com.smarttrip.domain.UserProfile;
 import com.smarttrip.domain.VistorTheme;
 
 /**
@@ -17,14 +13,12 @@ import com.smarttrip.domain.VistorTheme;
  */
 public interface IVistorThemeService {
 	
-	int deleteByPrimaryKey(String id);
+	int insert(VistorTheme record);
+	
+	int deleteByPrimaryKey(String id); 
 
-    int insert(VistorTheme record);
-
-    VistorTheme selectByPrimaryKey(String id);
-
-    List<VistorTheme> selectAll();
-
-    int updateByPrimaryKey(VistorTheme record);
+	int updateByPrimaryKey(VistorTheme record);
+	
+	VistorTheme selectByPrimaryKey(String id);
     
 }
