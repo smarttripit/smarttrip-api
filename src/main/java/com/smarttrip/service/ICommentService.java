@@ -19,10 +19,6 @@ public interface ICommentService {
 
 	int updateByPrimaryKey(Comment record);
 	
-<<<<<<< HEAD
     Comment selectByPrimaryKey(String id);    
-=======
-	Comment selectByPrimaryKey(String id);
->>>>>>> refs/remotes/origin/master
     
 }
