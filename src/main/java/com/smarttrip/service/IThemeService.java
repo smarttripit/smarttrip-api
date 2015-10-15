@@ -5,10 +5,6 @@
 package com.smarttrip.service;
 
 import java.util.List;
-
-import org.apache.ibatis.session.RowBounds;
-
-import com.smarttrip.domain.UserProfile;
 import com.smarttrip.domain.Theme;
 
 /**
@@ -17,14 +13,12 @@ import com.smarttrip.domain.Theme;
  */
 public interface IThemeService {
 	
-	int deleteByPrimaryKey(String id);
-
     int insert(Theme record);
+	
+	int deleteByPrimaryKey(String id); 
 
-    Theme selectByPrimaryKey(String id);
-
-    List<Theme> selectAll();
-
-    int updateByPrimaryKey(Theme record);
+	int updateByPrimaryKey(Theme record);
+	
+	Theme selectByPrimaryKey(String id);
     
 }

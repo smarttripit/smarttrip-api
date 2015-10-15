@@ -17,8 +17,14 @@ public interface IVistorService {
 	
 	int deleteByPrimaryKey(String id); 
 
+<<<<<<< HEAD
     Vistor selectByPrimaryKey(String id);
 
     int updateByPrimaryKey(Vistor record);
+=======
+	int updateByPrimaryKey(Vistor record);
+	
+	Vistor selectByPrimaryKey(String id);
+>>>>>>> refs/remotes/origin/master
     
 }

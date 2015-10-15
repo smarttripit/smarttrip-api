@@ -16,7 +16,11 @@ public interface IVistorThemeService {
 	int insert(VistorTheme record);
 	
 	int deleteByPrimaryKey(String id); 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> refs/remotes/origin/master
 	int updateByPrimaryKey(VistorTheme record);
 	
 	VistorTheme selectByPrimaryKey(String id);
