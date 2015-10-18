@@ -13,6 +13,8 @@ public class Comment {
 
     private String commentTime;
 
+    private String visitorId;
+
     public String getCommentId() {
         return commentId;
     }
@@ -59,5 +61,13 @@ public class Comment {
 
     public void setCommentTime(String commentTime) {
         this.commentTime = commentTime;
+    }
+
+    public String getVisitorId() {
+        return visitorId;
+    }
+
+    public void setVisitorId(String visitorId) {
+        this.visitorId = visitorId;
     }
 }

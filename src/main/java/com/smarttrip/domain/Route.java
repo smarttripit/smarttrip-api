@@ -21,13 +21,23 @@ public class Route {
 
     private String regionId;
 
+    private Integer displayOrder;
+
+    private String backgroundImg;
+
+    private String createTime;
+
+    private String modifyTime;
+
+    private String status;
+
     private String detail;
 
     private String feeDescription;
 
     private String bookingNotice;
 
-    private String detailRecommondation;
+    private String detailRecommendation;
 
     public String getRouteId() {
         return routeId;
@@ -109,6 +119,46 @@ public class Route {
         this.regionId = regionId;
     }
 
+    public Integer getDisplayOrder() {
+        return displayOrder;
+    }
+
+    public void setDisplayOrder(Integer displayOrder) {
+        this.displayOrder = displayOrder;
+    }
+
+    public String getBackgroundImg() {
+        return backgroundImg;
+    }
+
+    public void setBackgroundImg(String backgroundImg) {
+        this.backgroundImg = backgroundImg;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getModifyTime() {
+        return modifyTime;
+    }
+
+    public void setModifyTime(String modifyTime) {
+        this.modifyTime = modifyTime;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public String getDetail() {
         return detail;
     }
@@ -133,11 +183,11 @@ public class Route {
         this.bookingNotice = bookingNotice;
     }
 
-    public String getDetailRecommondation() {
-        return detailRecommondation;
+    public String getDetailRecommendation() {
+        return detailRecommendation;
     }
 
-    public void setDetailRecommondation(String detailRecommondation) {
-        this.detailRecommondation = detailRecommondation;
+    public void setDetailRecommendation(String detailRecommendation) {
+        this.detailRecommendation = detailRecommendation;
     }
 }

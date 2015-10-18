@@ -20,4 +20,5 @@ public interface IRouteService {
 	int updateByPrimaryKey(Route record);
 	
 	List<Route> selectByName(String name);
+
 }

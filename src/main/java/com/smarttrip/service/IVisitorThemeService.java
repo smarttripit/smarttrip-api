@@ -5,22 +5,20 @@
 package com.smarttrip.service;
 
 import java.util.List;
-import com.smarttrip.domain.Vistor;
+import com.smarttrip.domain.VisitorTheme;
 
 /**
  * 
  * @author zhangjiaxing
  */
-public interface IVistorService {
+public interface IVisitorThemeService {
 	
-    int insert(Vistor record);
+	int insert(VisitorTheme record);
 	
 	int deleteByPrimaryKey(String id); 
 
-
-    Vistor selectByPrimaryKey(String id);
-
-    int updateByPrimaryKey(Vistor record);
-
+	int updateByPrimaryKey(VisitorTheme record);
+	
+	VisitorTheme selectByPrimaryKey(String id);
     
 }
