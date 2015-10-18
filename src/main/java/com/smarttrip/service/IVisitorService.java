@@ -17,7 +17,6 @@ public interface IVisitorService {
 	
 	int deleteByPrimaryKey(String id); 
 
-
     Visitor selectByPrimaryKey(String id);
 
     int updateByPrimaryKey(Visitor record);
