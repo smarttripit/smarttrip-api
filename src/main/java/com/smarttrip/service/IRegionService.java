@@ -18,4 +18,6 @@ public interface IRegionService {
 	int updateByPrimaryKey(Region record);
 	
 	Region selectByPrimaryKey(String regionId);
+	
+	List<Region> selectByFirstRegion(String firstRegion);
 }
