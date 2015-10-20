@@ -20,5 +20,7 @@ public interface IVisitorThemeService {
 	int updateByPrimaryKey(VisitorTheme record);
 	
 	VisitorTheme selectByPrimaryKey(String id);
+
+	List<VisitorTheme> selectByVisitorId(String visitorId);
     
 }

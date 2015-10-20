@@ -20,5 +20,11 @@ public interface IVisitorService {
     Visitor selectByPrimaryKey(String id);
 
     int updateByPrimaryKey(Visitor record);
+    
+    Visitor selectByMobileNo(String mobileNo); 
+    
+    Visitor selectByEmail(String email); 
+    
+    Visitor selectByName(String name); 
  
 }
