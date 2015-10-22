@@ -2,7 +2,6 @@ package com.smarttrip.service;
 
 import java.util.List;
 
-import com.smarttrip.domain.ClassicalRoute;
 import com.smarttrip.domain.Route;
 
 /**
@@ -21,6 +20,12 @@ public interface IRouteService {
 	int updateByPrimaryKey(Route record);
 	
 	List<Route> selectByName(String name);
-
-	List<ClassicalRoute> selectTop3ByDisplayOrder();
+	
+	List<Route> selectTop3ByDisplayOrder();
+	
+	List<Integer> selectPeriods();
+	
+	List<Route> selectByRegionId(String regionId);
+	
+	List<Route> selectByConditions(String firstRegion, String secondRegion, String theme, int period);
 }
