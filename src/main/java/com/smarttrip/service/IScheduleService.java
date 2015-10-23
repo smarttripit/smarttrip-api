@@ -1,6 +1,8 @@
 package com.smarttrip.service;
 
 
+import java.util.List;
+
 import com.smarttrip.domain.Schedule;
 
 /**
@@ -17,4 +19,6 @@ public interface IScheduleService {
 	int updateByPrimaryKey(Schedule record);
 	
 	Schedule selectByPrimaryKey(String scheduleId);
+	
+	List<Schedule> selectByRouteId(String routeId);
 }
