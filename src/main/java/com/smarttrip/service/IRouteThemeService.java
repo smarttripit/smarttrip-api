@@ -1,5 +1,6 @@
 package com.smarttrip.service;
 
+
 import java.util.List;
 
 import com.smarttrip.domain.RouteTheme;
@@ -19,4 +20,7 @@ public interface IRouteThemeService {
 	
 	RouteTheme selectByPrimaryKey(String id);
 	
+	List<RouteTheme> selectByRouteId(String routeId);
+	
+	List<RouteTheme> selectByThemeId(String themeId);
 }
