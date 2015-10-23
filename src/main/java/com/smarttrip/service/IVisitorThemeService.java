@@ -5,6 +5,7 @@
 package com.smarttrip.service;
 
 import java.util.List;
+
 import com.smarttrip.domain.VisitorTheme;
 
 /**
@@ -22,5 +23,7 @@ public interface IVisitorThemeService {
 	VisitorTheme selectByPrimaryKey(String id);
 
 	List<VisitorTheme> selectByVisitorId(String visitorId);
+
+	int deleteByVisitorId(String visitorId);
     
 }
