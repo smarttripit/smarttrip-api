@@ -4,6 +4,8 @@
  */
 package com.smarttrip.service;
 
+import java.util.List;
+
 import com.smarttrip.domain.Comment;
 
 /**
@@ -20,4 +22,5 @@ public interface ICommentService {
 	
     Comment selectByPrimaryKey(String id);    
     
+    List<Comment> selectByRouteId(String routeId);
 }
