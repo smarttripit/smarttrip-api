@@ -20,6 +20,8 @@ public interface IThemeService {
 	int updateByPrimaryKey(Theme record);
 	
 	Theme selectByPrimaryKey(String id);
+	
+	Theme selectByName(String name);
     
 	List<Theme> selectAll();
 }
