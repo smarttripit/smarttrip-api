@@ -15,8 +15,9 @@ public interface IPhoneAuthCodeService {
 	 * key有四个：result、sendId、tipCode和tipMsg，其中：
 	 * result:可能值有success和failed；
 	 * sendId:每次发送都会产生一个不同的id；
-	 * tipCode和tipMsg:当result=failed的时候，表示失败情况。现在有一个情况需要处理：tipCode=threshold,tipMsg=单位时间内发送次数达到上限。
-	 * 
+	 * tipCode和tipMsg:当result=failed的时候，表示失败情况。
+	 * tipCode=threshold,tipMsg=单位时间内发送次数达到上限;
+	 * tipCode=unKnownError,tipMsg=发送短信验证码出现未知错误。
 	 */
 	public Map<String, String> send(String mobileNo);
 	
