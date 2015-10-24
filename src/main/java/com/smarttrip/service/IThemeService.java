@@ -21,7 +21,7 @@ public interface IThemeService {
 	
 	Theme selectByPrimaryKey(String id);
 	
-	Theme selectByThemeName(String name);
+	List<String> selectByThemeName(List<String> name);
     
 	List<Theme> selectAll();
 }
