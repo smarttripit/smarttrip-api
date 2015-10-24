@@ -5,9 +5,9 @@ public class Schedule {
 
     private String routeId;
 
-    private Integer order;
+    private Integer displayOrder;
 
-    private String type;
+    private String scheduleType;
 
     private String name;
 
@@ -38,19 +38,19 @@ public class Schedule {
     }
 
     public Integer getOrder() {
-        return order;
+        return displayOrder;
     }
 
     public void setOrder(Integer order) {
-        this.order = order;
+        this.displayOrder = order;
     }
 
     public String getType() {
-        return type;
+        return scheduleType;
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.scheduleType = type;
     }
 
     public String getName() {

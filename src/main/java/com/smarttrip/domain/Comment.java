@@ -3,7 +3,7 @@ package com.smarttrip.domain;
 public class Comment {
     private String commentId;
 
-    private String type;
+    private String productType;
 
     private String productId;
 
@@ -24,11 +24,11 @@ public class Comment {
     }
 
     public String getType() {
-        return type;
+        return productType;
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.productType = type;
     }
 
     public String getProductId() {
