@@ -20,4 +20,6 @@ public interface IRegionService {
 	Region selectByPrimaryKey(String regionId);
 	
 	List<Region> selectByFirstRegion(String firstRegion);
+	
+	List<String> selectRegionId(String firstRegion, List<String> secondRegion);
 }

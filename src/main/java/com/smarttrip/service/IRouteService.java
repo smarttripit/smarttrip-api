@@ -28,4 +28,6 @@ public interface IRouteService {
 	List<Route> selectByRegionId(String regionId);
 	
 	List<Route> selectByConditions(String firstRegion, String secondRegion, String theme, int period);
+
+	List<Route> selectByConditions(List<String> regionId, List<String> theme, int[] period, int pageNum, int pageSize, String sortField);
 }
