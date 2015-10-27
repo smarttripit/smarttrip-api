@@ -30,4 +30,6 @@ public interface IRouteService {
 	//List<Route> selectByConditions(String firstRegion, String secondRegion, String theme, int period);
 
 	List<Route> selectByConditions(List<String> regionId, List<String> routeId, int[] period, int pageNum, int pageSize, String sortField);
+
+	int updateStatusByRouteId(String routeId, char status);
 }
