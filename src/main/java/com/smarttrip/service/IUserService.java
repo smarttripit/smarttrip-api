@@ -30,4 +30,6 @@ public interface IUserService {
     
     boolean checkPwd(User user,String pwd);
     
+    List<User> selectAll(int pageNum, int pageSize);
+    
 }
