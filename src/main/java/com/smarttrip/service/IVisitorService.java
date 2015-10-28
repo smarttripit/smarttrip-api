@@ -24,6 +24,8 @@ public interface IVisitorService {
     
     Visitor selectByEmail(String email); 
     
-    Visitor selectByName(String name); 
- 
+    Visitor selectByName(String name);
+
+	int updateStatusByVisitorId(String visitorId , String Status);
+
 }

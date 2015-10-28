@@ -23,4 +23,6 @@ public interface ICommentService {
     Comment selectByPrimaryKey(String id);    
     
     List<Comment> selectByRouteId(String routeId);
+    
+    int deleteCommentByVisitorId(String visitorId, String[] commentIds); 
 }
