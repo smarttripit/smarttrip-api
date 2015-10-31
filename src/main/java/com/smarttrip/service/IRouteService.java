@@ -2,6 +2,7 @@ package com.smarttrip.service;
 
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import com.smarttrip.domain.Route;
 
 /**
@@ -17,6 +18,10 @@ public interface IRouteService {
 	
 	int deleteByPrimaryKey(String routeId);
 	
+	List<Route> selectAll();
+	
+	int selectAllCount();
+	
 	int updateByPrimaryKey(Route record);
 	
 	List<Route> selectByName(String name);
@@ -31,5 +36,7 @@ public interface IRouteService {
 
 	List<Route> selectByConditions(List<String> regionId, List<String> routeId, int[] period, int pageNum, int pageSize, String sortField);
 
+	PageInfo<Route> selectByCondition(String status, String name, String[] regionId, String[] routeId, int[] period, int page, int rows);
+		
 	int updateStatusByRouteId(String routeId, char status);
 }

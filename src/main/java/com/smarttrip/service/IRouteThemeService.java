@@ -24,5 +24,5 @@ public interface IRouteThemeService {
 	
 	List<RouteTheme> selectByThemeId(String themeId);
 	
-	List<String> selectRouteId(List<String> themeId);
+	List<String> selectRouteId(String[] themeId);
 }
