@@ -4,6 +4,7 @@
  */
 package com.smarttrip.service;
 
+import com.github.pagehelper.PageInfo;
 import com.smarttrip.domain.Visitor;
 
 /**
@@ -27,5 +28,8 @@ public interface IVisitorService {
     Visitor selectByName(String name);
 
 	int updateStatusByVisitorId(String visitorId , String Status);
+
+	PageInfo<Visitor> selectVisitorByPage(int page, int rows, String name,
+			String mobileNo, String email);
 
 }
