@@ -38,8 +38,18 @@ public class Route {
     private String bookingNotice;
 
     private String detailRecommendation;
+    
+    private String bottomPrice;
 
-    public String getRouteId() {
+    public String getBottomPrice() {
+		return bottomPrice;
+	}
+
+	public void setBottomPrice(String bottomPrice) {
+		this.bottomPrice = bottomPrice;
+	}
+
+	public String getRouteId() {
         return routeId;
     }
 
