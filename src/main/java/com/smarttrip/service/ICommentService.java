@@ -6,6 +6,7 @@ package com.smarttrip.service;
 
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import com.smarttrip.domain.Comment;
 
 /**
@@ -24,5 +25,9 @@ public interface ICommentService {
     
     List<Comment> selectByRouteId(String routeId);
     
-    int deleteCommentByVisitorId(String visitorId, String[] commentIds); 
+    int deleteCommentByVisitorId(String visitorId, String[] commentIds);
+
+	PageInfo<Comment> selectCommentByPage(int page, int rows, String visitorId,
+			String content, String productType, String commentBeginTime,
+			String commentEndTime); 
 }
